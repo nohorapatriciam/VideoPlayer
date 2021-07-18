@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Video Player</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="player">
+      <video id="video" muted src="./videos/cat.mov" width="400"></video>
+      <div class="playerOverlay">
+        <h2 class="playerTitle">Realizando mis primeros proyectos como developer Jr</h2>
+        <div class="playerActions">
+          <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+          <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+          <button class="button" hidden id="pause" aria-label="Pausar" title="Pausar"></button>
+          <button class="button" id="forward" aria-label="Adelatar 10 segundos" title="Adelatar 10 segundos"></button>
+          <!-- <button class="bar" id="bar" aria-label="barra" title="barra de reproducción"></button> -->
+        </div>
+        <div class="playerProgress">
+          <input id="progress" type="range" min="0" value ="0" step="1">
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
